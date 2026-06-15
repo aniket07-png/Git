@@ -24,7 +24,7 @@ jobs:
               uses: actions/configure-pages@v4
 
             - name: Static code artifacts
-              uses: actions/upload-pages
+              uses: actions/upload-pages-artifact@v3
               with:
                 path : "."
 
