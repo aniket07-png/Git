@@ -1,0 +1,16 @@
+---
+name: Hello
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - '**.html'
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: say hello to users
+        run: echo "Hello Dosto"
+      - name: say hello to username
+        run: echo "Hello $USER"
